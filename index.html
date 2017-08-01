@@ -11,6 +11,9 @@
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 			grid-auto-flow: row;
 		}
+		.container.four {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
 		.container div {
 			background: red;
 			padding:2px;
@@ -22,12 +25,18 @@
 			.container {
 				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 			}
+			.container.four {
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+			}
 		}
 		@media all and (max-width: 1239px) and (min-width: 720px) {
 			body {
 				background: skyblue;
 			}
 			.container {
+				grid-template-columns: 1fr 1fr;
+			}
+			.container.four {
 				grid-template-columns: 1fr 1fr;
 			}
 		}
@@ -38,6 +47,9 @@
 			.container {
 				grid-template-columns: 1fr;
 			}
+			.container.four {
+				grid-template-columns: 1fr;
+			}
 		}
 		@media all and (max-width: 511px) {
 			body {
@@ -46,31 +58,59 @@
 			.container {
 				grid-template-columns: 1fr;
 			}
+			.container.four {
+				grid-template-columns: 1fr;
+			}
 		}
 	</style>
 	</head>
 	<body>
-	<h1>Grid Layout</h1>
-		<div class="container">
-			<div class="item1">
+		<h1>Grid Layout With 4/5 column solution</h1>
+		<h3>container with four</h3>
+		<div class="container four">
+			<div>
 				some other text
 			</div>
-			<div class="item2">
+			<div>
 				some text
 			</div>
-			<div class="item3">
+			<div>
 				weit unten
 			</div>
-			<div class="item4">
+			<div>
 				weit unten2
 			</div>
-			<div class="item5">
+			<div>
 				weit unten3
 			</div>
-			<div class="itemother">
+			<div>
 				weit unten4
 			</div>
-			<div class="itemother">
+			<div>
+				so weit unten das geht ned
+			</div>
+		</div>
+		<h3>container with five(default)</h3>
+		<div class="container">
+			<div>
+				some other text
+			</div>
+			<div>
+				some text
+			</div>
+			<div>
+				weit unten
+			</div>
+			<div>
+				weit unten2
+			</div>
+			<div>
+				weit unten3
+			</div>
+			<div>
+				weit unten4
+			</div>
+			<div>
 				so weit unten das geht ned
 			</div>
 		</div>
@@ -79,17 +119,18 @@ Solution 1: What's it gonna be in 4 Months?<br>
 Solution 2: some fallback solution for older browsers?!<br>
 <br>
 Problem: does not work automatically for 4 or 5 columns like here:<br>
-		<div class="container">
-			<div class="item1">
+		<h3>Solution 0: container with exactly four columns via extra class</h3>
+		<div class="container four">
+			<div>
 				some other text
 			</div>
-			<div class="item2">
+			<div>
 				some text
 			</div>
-			<div class="item3">
+			<div>
 				weit unten
 			</div>
-			<div class="item4">
+			<div>
 				weit unten2
 			</div>
 		</div>
