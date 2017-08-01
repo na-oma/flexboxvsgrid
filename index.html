@@ -9,13 +9,43 @@
 		.container {
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-			grid-auto-columns: 1fr;
-			grid-auto-rows: 1 fr;
 			grid-auto-flow: row;
 		}
 		.container div {
 			background: red;
 			padding:2px;
+		}
+		@media all and (min-width: 1240px) {
+			body {
+				background: green;
+			}
+			.container {
+				grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			}
+		}
+		@media all and (max-width: 1239px) and (min-width: 720px) {
+			body {
+				background: skyblue;
+			}
+			.container {
+				grid-template-columns: 1fr 1fr;
+			}
+		}
+		@media all and (max-width: 719px) and (min-width: 512px) {
+			body {
+				background: yellow;
+			}
+			.container {
+				grid-template-columns: 1fr;
+			}
+		}
+		@media all and (max-width: 511px) {
+			body {
+				background: turquoise;
+			}
+			.container {
+				grid-template-columns: 1fr;
+			}
 		}
 	</style>
 	</head>
@@ -40,12 +70,15 @@
 			<div class="itemother">
 				weit unten4
 			</div>
+			<div class="itemother">
+				so weit unten das geht ned
+			</div>
 		</div>
 Problem: only 75% Browser support!<br>
 Solution 1: What's it gonna be in 4 Months?<br>
 Solution 2: some fallback solution for older browsers?!<br>
 <br>
-Problem: does not work automatically for 4 or 5 columns!<br>
+Problem: does not work automatically for 4 or 5 columns like here:<br>
 		<div class="container">
 			<div class="item1">
 				some other text
@@ -60,9 +93,10 @@ Problem: does not work automatically for 4 or 5 columns!<br>
 				weit unten2
 			</div>
 		</div>
+Solution 0: If we know that when generating the page, we just make two different classes, one for four columns and one for five<br>
 Solution 1: javascript number of columns to fit number of items<br>
 Solution 2: css? (count items??)<br>
-Solution 3: Insert as many dummy nodes as are needed to get to 5 items (do we remove them when viewing on smartphone? (JS)) <br>
+Solution 3: Insert as many dummy nodes as are needed to get to 5 items (do we remove them when viewing on smartphone? (JS/CSS?))<br>
 <br>
 	</body>
 </html>
