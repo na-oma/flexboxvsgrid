@@ -33,21 +33,39 @@
 			body {
 				background: skyblue;
 			}
+			.container div {
+				flex-basis: 50%;
+			}
+			.container.four div {
+				flex-basis: 50%;
+			}
 		}
 		@media all and (max-width: 719px) and (min-width: 512px) {
 			body {
 				background: yellow;
+			}
+			.container div {
+				flex-basis: 100%;
+			}
+			.container.four div {
+				flex-basis: 100%;
 			}
 		}
 		@media all and (max-width: 511px) {
 			body {
 				background: turquoise;
 			}
+			.container div {
+				flex-basis: 100%;
+			}
+			.container.four div {
+				flex-basis: 100%;
+			}
 		}
 	</style>
 	</head>
 	<body>
-		<h1>Flexbox</h1>
+		<h1>Flexbox solution with extra classes and media queries</h1>
 		<h3>only 4 items in 4 columns with extra class</h3>
 		<div class="container four">
 			<div>
