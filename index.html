@@ -1,61 +1,93 @@
 <html>
 	<head>
 	<style>
+                html, body { height: 100%; margin: 0px; padding: 0px; }
+                body {
+                        font-family:sans-serif;
+                        box-sizing: border-box;
+                }
 		.container {
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-			grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-			height: 20%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
 		}
 		.container div {
 			background: red;
+			flex-grow: 1;
+			flex-shrink: 1;
+			flex-basis: 20%;
+		}
+		.container div:empty {
+			height:0;
+			visibility:hidden;
 		}
 		.item1 {
-			grid-column-start: 1;
-			grid-column-end: 2;
-			grid-row-start: 1;
-			grid-row-end: 2;
 		}
 		.item2 {
-			grid-column-start: 2;
-			grid-column-end: 3;
-			grid-row-start: 2;
-			grid-row-end: 3;
 		}
 		.item3 {
-			grid-column-start: 3;
-			grid-column-end: 4;
-			grid-row-start: 3;
-			grid-row-end: 4;
 		}
 		.item4 {
-			grid-column-start: 4;
-			grid-column-end: 5;
-			grid-row-start: 4;
-			grid-row-end: 5;
 		}
 		.item5 {
-			grid-column-start: 5;
-			grid-column-end: 6;
-			grid-row-start: 5;
-			grid-row-end: 6;
 		}
 		.item6 {
-			grid-column-start: 6;
-			grid-column-end: 7;
-			grid-row-start: 6;
-			grid-row-end: 7;
 		}
 		.itemother {
-			grid-column-start: 1;
-			grid-column-end: 3;
-			grid-row-start: 3;
-			grid-row-end: 6;
 			background: blue !important;
 		}
 	</style>
 	</head>
 	<body>
+		<div class="container">
+			<div class="item1">
+				some other text
+			</div>
+			<div class="item2">
+				some text
+			</div>
+			<div class="item3">
+				weit unten
+			</div>
+			<div class="item4">
+				weit unten2
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+<br>
+		<div class="container">
+			<div class="item1">
+				some other text
+			</div>
+			<div class="item2">
+				some text
+			</div>
+			<div class="item3">
+				weit unten
+			</div>
+			<div class="item4">
+				weit unten2
+			</div>
+			<div class="item5">
+				weit unten3
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+<br>
 		<div class="container">
 			<div class="item1">
 				some other text
@@ -76,8 +108,16 @@
 				weit unten4
 			</div>
 			<div class="itemother">
-				weit unten4
+				gaaaaaanz weit unten4
 			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
 		</div>
 	</body>
 </html>
