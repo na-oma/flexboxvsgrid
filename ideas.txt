@@ -1,10 +1,14 @@
 Basically: decision between
 	-fixed width items, space in between grows, can have 1-99 on one line, nice grid
 		-https://codepen.io/anon/pen/jLMEeE
-		-https://codepen.io/anon/pen/Evgadm
+		-https://codepen.io/anon/pen/yoaOjo
+		-https://codepen.io/anon/pen/yoaYNj
+		-https://codepen.io/anon/pen/wqzGxW
+		-some other solution: https://codepen.io/anon/pen/yoaORP
 	-flexible items, grow themselves, can have fixed number (like 4, 5) on one line, nice grid
 		-see git
 		-see semanticui
+
 
 probieren:
 so wie in https://codepen.io/team/css-tricks/pen/EKEYob
