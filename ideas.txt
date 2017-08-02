@@ -5,6 +5,7 @@ Basically: decision between
 		-https://codepen.io/anon/pen/yoaYNj
 		-https://codepen.io/anon/pen/wqzGxW
 		-some other solution: https://codepen.io/anon/pen/yoaORP
+		-https://codepen.io/anon/pen/aymBxQ
 	-flexible items, grow themselves, can have fixed number (like 4, 5) on one line, nice grid
 		-see git
 		-see semanticui
