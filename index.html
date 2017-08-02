@@ -2,7 +2,7 @@
 	<head>
 	<style>
                 html, body { height: 100%; margin: 0px; padding: 0px; }
-                body {
+                body,* {
                         font-family:sans-serif;
                         box-sizing: border-box;
                 }
@@ -15,6 +15,10 @@
 			flex-grow: 1;
 			flex-shrink: 1;
 			flex-basis: 20%;
+			border:black 2px solid;
+		}
+		.container.four div {
+			flex-basis: 25%;
 		}
 		.container div:empty {
 			height: 0;
@@ -44,8 +48,8 @@
 	</head>
 	<body>
 		<h1>Flexbox</h1>
-		<h3>only 4 items in 5 columns</h3>
-		<div class="container">
+		<h3>only 4 items in 4 columns with extra class</h3>
+		<div class="container four">
 			<div>
 				some other text
 			</div>
@@ -89,6 +93,42 @@ Solution1: extra CSS Classes for four/five columns.<br>
 			<div>
 				weit unten3
 			</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+<br>
+		<h3>more items in 4 columns</h3>
+		<div class="container four">
+			<div>
+				some other text
+			</div>
+			<div>
+				some text
+			</div>
+			<div>
+				weit unten
+			</div>
+			<div>
+				weit unten2
+			</div>
+			<div>
+				weit unten3
+			</div>
+			<div>
+				weit unten4
+			</div>
+			<div>
+				gaaaaaanz weit unten4
+			</div>
+			<div></div>
+			<div></div>
+			<div></div>
 			<div></div>
 			<div></div>
 			<div></div>
